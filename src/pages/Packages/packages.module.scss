@@ -1,0 +1,39 @@
+.container {
+    margin: $margin * 6;
+}
+
+.header {
+    @include box-shadow-default;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+
+    .title {
+        @include flex-center;
+
+        span {
+            font-weight: 600;
+            font-size: 2em;
+        }
+    }
+
+    .button {
+        width: 150px;
+        border-radius: 32px
+    }
+}
+
+.table {
+    @include box-shadow-default;
+    padding: $padding * 4;
+    background: white;
+    margin-top: $margin * 6;
+    border-radius: $radius * 4;
+}
+
+.status {
+    @include flex-center;
+}

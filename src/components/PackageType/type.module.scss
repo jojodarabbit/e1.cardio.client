@@ -1,0 +1,26 @@
+.container {
+    @include flex-center;
+}
+
+.content {
+    padding: $padding * 2;
+    width: 120px;
+    text-align: center;
+    border-radius: $radius * 3;
+    font-weight: 600;
+}
+
+.gold {
+    background-color: $type-gold;
+    color: $type-gold-text;
+}
+
+.platium {
+    background-color: $type-platium;
+    color: $type-platium-text;
+}
+
+.class {
+    background-color: $type-class;
+    color: $type-class-text;
+}

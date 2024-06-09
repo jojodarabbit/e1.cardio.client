@@ -1,0 +1,51 @@
+.container {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .content {
+            height: 85%;
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+
+            h3 {
+                font-weight: 600;
+            }
+
+            span {
+                color: $gray-2;
+                font-weight: 500;
+            }
+        }
+    }
+
+    img {
+        height: 45px;
+    }
+
+    .down {
+        @include flex-center;
+        flex-direction: column;
+        cursor: pointer;
+        border: none;
+        background: none;
+
+        svg {
+            border: 1px solid $gray;
+            padding: $padding * 1.5;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+    }
+}

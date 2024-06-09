@@ -1,0 +1,18 @@
+.container {
+    select {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: $radius-md;
+        padding: $padding-sm * 1.5;
+    }
+
+    .label {
+        font-weight: 600;
+        opacity: .8;
+        margin-bottom: 12px;
+        display: block;
+        font-size: 16px;
+    }
+}

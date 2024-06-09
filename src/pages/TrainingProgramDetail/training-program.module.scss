@@ -1,0 +1,59 @@
+.container {
+    margin: $margin * 6;
+}
+
+.header {
+    @include box-shadow-default;
+    flex-direction: column;
+    background: white;
+    display: flex;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+
+    span {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 2em;
+        margin-top: $margin-sm * 2;
+    }
+}
+
+.top-section {
+    margin: $margin-sm * 3;
+
+    .time {
+        .day {
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        .duration {
+            font-style: italic;
+        }
+    }
+
+    .modified-history {
+        margin-top: $margin-sm;
+
+        span {
+            font-weight: 800;
+        }
+    }
+}
+
+.modules-container {
+    margin: $margin-sm * 3;
+
+    .title {
+        font-weight: 800;
+        font-size: 1.5em;
+    }
+
+    .modules {
+        margin: $margin-sm * 2 0;
+    }
+}

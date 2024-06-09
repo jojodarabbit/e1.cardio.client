@@ -1,0 +1,76 @@
+.container {
+    @include box-shadow-default;
+    width: 280px;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    color: yellow;
+    .groups {
+        margin-top: $margin* 8;
+    }
+}
+
+.route {
+    padding: 0 $padding * 4;
+    margin: 2px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: yellow;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        background: $primary;
+        height: 100%;
+        width: 4px;
+        border-radius: $radius * 4;
+        visibility: hidden;
+    }
+
+    .route-content {
+        @include flex-center;
+        justify-content: start;
+        padding: $padding * 4;
+        border-radius: $radius * 3;
+        font-weight: 500;
+
+        span {
+            display: block;
+            margin-left: $margin * 3;
+            font-size: 18px;
+        }
+    }
+
+    &.active {
+
+        &::before {
+            visibility: visible;
+        }
+
+        .route-content {
+            background: $primary;
+        }
+    }
+}
+
+.header {
+    @include flex-center;
+    margin-top: 65px;
+
+    .content {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-left: $margin * 4;
+        }
+
+        img {
+            max-width: 50px;
+        }
+    }
+}

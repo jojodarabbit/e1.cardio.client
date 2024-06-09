@@ -1,0 +1,59 @@
+$btn-height: 25px;
+
+.container {
+    width: 75px;
+
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        height: $btn-height;
+        background: #ccc;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    label::before {
+        content: 'Disable';
+        position: absolute;
+        top: 50%;
+        left: calc(100% - 45px);
+        transform: translateY(-50%);
+        font-size: 12px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    label:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        width: $btn-height - 8px;
+        height: $btn-height - 8px;
+        background: #2d3748;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked+label {
+        background: #32e1c9;
+    }
+
+    input:checked+label:after {
+        left: calc(100% - 5px);
+        transform: translate(-100%, -50%);
+    }
+
+    input:checked+label::before {
+        content: 'Active';
+        left: calc(100% - 35px);
+        transform: translate(-100%, -50%);
+    }
+}

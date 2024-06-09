@@ -1,0 +1,22 @@
+.container {
+    padding: $padding * 2;
+    width: 120px;
+    text-align: center;
+    border-radius: $radius * 3;
+    font-weight: 600;
+}
+
+.success {
+    background-color: $success;
+    color: $success-text;
+}
+
+.processing {
+    background-color: $processing;
+    color: $processing-text;
+}
+
+.canceled {
+    background-color: $canceled;
+    color: $canceled-text;
+}

@@ -1,0 +1,187 @@
+.container {
+    margin: $margin * 6;
+}
+
+.header {
+    @include box-shadow-default;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+
+    span {
+        font-weight: 600;
+        font-size: 2em;
+    }
+}
+
+.form {
+    background: #ccc;
+    padding: $padding-sm * 4;
+    border-radius: $radius-md;
+    margin-top: $margin-sm * 3;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+
+    .group-1 {
+        flex-basis: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .group-2 {
+        flex-basis: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    .group-3 {
+        flex-basis: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .input {
+        margin-bottom: $margin-sm * 4;
+    }
+
+    input,
+    select {
+        height: 50px !important;
+    }
+
+    textarea {
+        height: 168px !important;
+    }
+}
+.timeSelect {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2em;
+
+    .group {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            flex-basis: 45%;
+            border-radius: $radius-md * 5;
+        }
+
+        .cancel {
+            background: white;
+            color: black;
+        }
+    }
+}
+.scheduleContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.schedule{
+    display: flex;
+    gap: 10px;
+    color: #41B06E;
+    border: 1px solid #41B06E;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardSession{
+    color: black;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.avatar{
+    width: 318px;
+    height: 318px;
+    margin-bottom: 20px;
+}
+
+.buttonSession{
+    width: 200px;
+}
+.title {
+    @include box-shadow-default;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: $padding * 6;
+    margin-bottom: 20px;
+    border-radius: $radius * 4;
+    justify-content: space-between;
+    span {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    select {
+        border: 1px solid #41B06E;
+        border-radius: 20px;    
+        min-width: 200px;
+    }
+}
+
+.newbox{
+    padding: $padding-sm * 4;
+    border-radius: $radius-md;
+    margin-top: $margin-sm * 3;
+    background-color: #F8FBFE;
+    margin-bottom: $margin-sm * 3;
+}
+.newbox2{
+    top: 15%;
+    left: 35%;
+    position: fixed;
+    width: 800px;
+    height: 580px;
+    margin: 5% auto;
+    padding: 10px;
+    border: 5px solid #ccc;
+    background-color: white;
+    border-radius: 20px;
+}
+textarea {
+    border: 10px solid #ccc;
+}
+
+.flexCha{
+    display: flex;
+}
+
+.hidden{
+    visibility: hidden;
+}

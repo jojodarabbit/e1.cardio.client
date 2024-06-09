@@ -1,0 +1,38 @@
+.form {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input {
+    &:first-child {
+        margin-bottom: 42px;
+    }
+}
+
+.submit {
+    @include flex-center;
+    flex-direction: column;
+
+    .button {
+        width: 85%;
+    }
+
+    .register {
+        text-align: center;
+        width: 100%;
+        margin-top: 16px;
+
+        .text {
+            font-weight: 500;
+            color: rgb(57, 60, 63);
+        }
+
+        .link {
+            margin-left: 6px;
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.container {
+    margin: $margin * 6;
+}
+
+.header {
+    @include box-shadow-default;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+
+    span {
+        font-weight: 600;
+        font-size: 2em;
+    }
+}
+
+.form {
+    background: #ccc;
+    padding: $padding-sm * 4;
+    border-radius: $radius-md;
+    margin-top: $margin-sm * 3;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+
+    .group-1 {
+        flex-basis: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .group-2 {
+        flex-basis: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .input {
+        margin-bottom: $margin-sm * 4;
+    }
+
+    input,
+    select {
+        height: 50px !important;
+    }
+
+    textarea {
+        height: 168px !important;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2em;
+
+    .group {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            flex-basis: 45%;
+            border-radius: $radius-md * 5;
+        }
+
+        .cancel {
+            background: white;
+            color: black;
+        }
+    }
+}

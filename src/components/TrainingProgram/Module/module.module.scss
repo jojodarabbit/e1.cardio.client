@@ -1,0 +1,22 @@
+.container {
+    @include box-shadow-default;
+    padding: $padding-sm * 3;
+    background: white;
+    margin-bottom: $margin-sm * 3;
+    border-radius: $radius-md * 1.5;
+
+    .title {}
+
+    .modified-history {
+        margin-top: $margin-sm;
+
+        span {
+            font-weight: 500;
+            color: #696969;
+        }
+
+        .symbol {
+            margin: 0 $margin-sm;
+        }
+    }
+}

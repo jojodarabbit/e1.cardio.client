@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+        cursor: pointer;
+    }
+
+    span {
+        display: block;
+        padding: 0 12px;
+        color: #ccc;
+    }
+
+    .delete {
+        color: red;
+    }
+}

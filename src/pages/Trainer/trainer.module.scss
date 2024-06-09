@@ -1,0 +1,55 @@
+.container {
+    margin: $margin * 6;
+    height: 65vh;
+}
+
+.header {
+    @include box-shadow-default;
+    display: flex;
+    align-items: center;
+    border-radius: $radius * 4;
+    background: white;
+    padding: $padding * 6;
+    margin-bottom: $margin * 5;
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+
+    .status {
+        @include flex-center;
+        width: 75px;
+        padding: 0 !important;
+        height: 22px;
+        font-size: 12px;
+        margin-left: $margin * 2;
+    }
+}
+
+.content {
+    @include box-shadow-default;
+    @include flex-center;
+    align-items: start;
+    border-radius: $radius * 4;
+    height: 100%;
+    background: white;
+
+    .inputs {
+        width: 70%;
+        margin: $margin * 8 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: $gap * 12;
+        row-gap: $gap * 4;
+
+        label {
+            font-weight: 600;
+            color: $gray-3;
+        }
+
+        input {
+            font-weight: 700;
+        }
+    }
+}

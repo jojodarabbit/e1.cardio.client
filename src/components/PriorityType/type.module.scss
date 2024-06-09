@@ -1,0 +1,31 @@
+.container {
+    @include flex-center;
+}
+
+.content {
+    padding: $padding * 2;
+    width: 120px;
+    text-align: center;
+    border-radius: $radius * 3;
+    font-weight: 600;
+}
+
+.high {
+    background-color: #F32456;
+    color: #672A2A;
+}
+
+.low {
+    background-color: #73F071;
+    color: #3D9116;
+}
+
+.medium {
+    background-color: #F7DC4D;
+    color: #8B8838;
+}
+
+.class {
+    background-color: $type-class;
+    color: $type-class-text;
+}

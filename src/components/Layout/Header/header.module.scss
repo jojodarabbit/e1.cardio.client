@@ -1,0 +1,7 @@
+.container {
+    @include flex-center;
+    justify-content: flex-end;
+    height: 85px;
+    background: white;
+    padding: $padding-sm * 4;
+}

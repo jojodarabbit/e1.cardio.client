@@ -1,0 +1,14 @@
+.container {
+    padding: $padding * 6;
+
+    .heading {
+        font-weight: 600;
+        font-size: 2em;
+        margin-bottom: $padding * 6;
+    }
+
+    .main-viewport {
+        margin-top: $padding * 6;
+        display: flex;
+    }
+}

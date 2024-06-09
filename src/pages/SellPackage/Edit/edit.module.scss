@@ -1,0 +1,208 @@
+.container {
+    margin: $margin * 6;
+}
+
+.header {
+    @include box-shadow-default;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+
+    span {
+        font-weight: 600;
+        font-size: 2em;
+    }
+}
+.title {
+    @include box-shadow-default;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+    justify-content: space-between;
+    span {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    select {
+        border: 1px solid #41B06E;
+        border-radius: 20px;    
+        min-width: 200px;
+    }
+}
+
+.form {
+    background: #ccc;
+    padding: $padding-sm * 4;
+    border-radius: $radius-md;
+    margin-top: $margin-sm * 3;
+}
+
+.inputs {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    .group-1 {
+        height: 100%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .group-2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .input {
+        margin-bottom: $margin-sm * 4;
+        
+    }
+    .flexbox {
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+    }
+    .scheduleContainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .schedule{
+        display: flex;
+        gap: 10px;
+        color: #41B06E;
+        border: 1px solid #41B06E;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: white;
+        width: 190px;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardSchedule {
+        max-height: 150px;
+        overflow-y: auto;
+    }
+    .scheduleRow{
+        margin-bottom: 10px;
+        color: #41B06E;
+        display: flex;
+        gap: 10px;
+        color: #41B06E;
+        border: 1px solid #41B06E;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: white;
+        width: 190px;
+        align-items: center;
+        justify-content: center;
+    }
+    .label {
+        font-weight: 600;
+        opacity: .8;
+        margin-bottom: 12px;
+        display: block;
+        font-size: 18px;
+    }
+    input {
+        height: 40px !important;
+        cursor: pointer;
+        width: auto;
+    }
+    select {
+        font-size: 16px;
+        height: 45px !important;
+        cursor: pointer;
+        width: auto;
+        border: 1px solid black;
+    }
+
+    textarea {
+        height: 144px !important;
+    }
+
+    .icon{
+        font-size: 36px;
+    }
+    .iconRemove{
+        font-size: 22px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2em;
+
+    .group {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            flex-basis: 45%;
+            border-radius: $radius-md * 5;
+        }
+
+        .cancel {
+            background: white;
+            color: black;
+        }
+    }
+}
+
+.card {
+    height: 300px;
+    margin: 0 ;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+   }
+.cardbig {
+    height: 550px;
+    margin: 0 ;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+   }   
+   .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    font-weight: bold;
+   }
+   
+   .circle {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+   

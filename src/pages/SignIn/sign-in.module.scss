@@ -1,0 +1,11 @@
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    background: url('/public/images/login-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

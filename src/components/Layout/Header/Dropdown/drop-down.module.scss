@@ -1,0 +1,21 @@
+.container {
+    @include box-shadow-default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 $padding-sm * 2;
+    background: white;
+    top: 145%;
+    right: 0;
+    border-radius: $radius-md;
+    position: absolute;
+    width: 100%;
+
+    span {
+        &:last-child {
+            margin-top: $margin-sm * 2;
+            
+        }
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+
+    input {
+        display: none;
+    }
+
+    label {
+        @include flex-center;
+        cursor: pointer;
+        border: 2px solid $btn;
+        color: $btn;
+        font-weight: 600;
+        width: 100%;
+        padding: $padding-sm * 1.5;
+        border-radius: $radius-sm * 1.5;
+    }
+}

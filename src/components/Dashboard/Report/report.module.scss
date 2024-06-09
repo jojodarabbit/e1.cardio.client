@@ -1,0 +1,9 @@
+.container {
+    @include box-shadow-default;
+    background: white;
+    margin-right: $margin * 3;
+    flex-basis: 65%;
+    padding: $padding * 6;
+    border-radius: $radius * 4;
+
+}

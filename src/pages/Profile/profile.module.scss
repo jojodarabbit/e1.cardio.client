@@ -1,0 +1,86 @@
+.container {
+    margin: $margin * 6;
+}
+
+.header {
+    @include box-shadow-default;
+    display: flex;
+    align-items: center;
+    border-radius: $radius * 4;
+    background: white;
+    padding: $padding * 6;
+    margin-bottom: $margin * 5;
+
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+}
+
+
+.content {
+    @include box-shadow-default;
+    @include flex-center;
+    flex-direction: column;
+    border-radius: $radius * 4;
+    min-height: 100dvh;
+    background: white;
+
+    .inputs {
+        width: 70%;
+        margin: $margin * 8 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: $gap-sm * 10;
+        row-gap: $gap-sm * 3;
+
+        label {
+            font-weight: 600;
+            color: $gray-3;
+        }
+
+        input {
+            font-weight: 700;
+        }
+    }
+
+    .upload {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: $gap-sm * 10;
+
+        .status {
+            display: flex;
+            align-items: center;
+
+            span {
+                display: block;
+                margin-top: 10px;
+                margin-right: $margin-sm * 4;
+                font-weight: 600;
+                color: #555555;
+            }
+
+            .btn-wrapper {
+                height: 100%;
+            }
+        }
+
+        .upload-btn {
+            white-space: nowrap;
+            width: 65%;
+        }
+    }
+}
+
+.update-btn {
+    @include flex-center;
+    width: 100%;
+    margin-top: $margin * 8;
+
+    .button {
+        width: 20%;
+    }
+}

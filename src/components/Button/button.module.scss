@@ -1,0 +1,33 @@
+.button {
+    @include flex-center;
+
+    width: 100%;
+    background: $primary;
+    min-height: 45px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: .9em;
+    transition: all 0.4s ease-out;
+    font-size: 18px;
+
+    &:hover {
+        background: $btn-hover;
+        cursor: pointer;
+    }
+
+    &.disabled {
+        filter: brightness(120%);
+        pointer-events: none
+    }
+}
+
+.loading {
+    @include flex-center;
+
+    .loader {
+        width: 22px;
+        margin-right: $margin-sm;
+    }
+}
