@@ -282,7 +282,7 @@ const CreatePackage = () => {
                         </div>
                     <div className={styles.inputs}>
                         <div className={styles['group-1']}>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzt2pl-jBxZQRauAMdzkQD8xjIHpPnjPus5w&s" className={styles.avatar} id='profile-pic'></img>
+                            <img src="https://pbs.twimg.com/media/F0u_EexaYAAyjp9.jpg" className={styles.avatar} id='profile-pic'></img>
                             <Input
                                 label="Tên giáo án"
                                 className={styles.input}
