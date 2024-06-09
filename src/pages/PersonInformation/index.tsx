@@ -32,11 +32,11 @@ const DetailPersonInfo = () => {
             console.error(error);
         }
     });
-    console.log(value);
+
     const navigate = useNavigate();
 
     const handleCancelClick = () => {
-        navigate(dataFromMotherScreen.currentPage);
+        navigate(dataFromMotherScreen?.currentPage ? dataFromMotherScreen.currentPage : '/customer-management');
     };
     return (
         <div className={styles.container}>
@@ -61,15 +61,19 @@ const DetailPersonInfo = () => {
                                         <FontAwesomeIcon icon={faStarHalfAlt} />
                                         <div> {value?.membershipTier}</div>
                                     </div>
+                                    <div className={styles.Platinum}>
+                                        <FontAwesomeIcon icon={faFireFlameCurved} /><span></span>
+                                        {value?.energyPoint}
+                                    </div>
                                 </div>
                             }
                             {value?.membershipTier === "PLatinum" &&
                                 <div className={styles.flex}>
-                                    <div className={styles.PLatinum}>
+                                    <div className={styles.Platinum}>
                                         <FontAwesomeIcon icon={faStarHalfAlt} />
                                         <div> {value?.membershipTier}</div>
                                     </div>
-                                    <div className={styles.PLatinum}>
+                                    <div className={styles.Platinum}>
                                         <FontAwesomeIcon icon={faFireFlameCurved} /><span></span>
                                         <div> {value?.energyPoint}</div>
                                     </div>
@@ -81,7 +85,7 @@ const DetailPersonInfo = () => {
                                         <FontAwesomeIcon icon={faStarHalfAlt} />
                                         <div> {value?.membershipTier}</div>
                                     </div>
-                                    <div className={styles.Gold}>
+                                    <div className={styles.Platinum}>
                                         <FontAwesomeIcon icon={faFireFlameCurved} /><span></span>
                                         <div> {value?.energyPoint}</div>
                                     </div>
@@ -93,7 +97,7 @@ const DetailPersonInfo = () => {
                                         <FontAwesomeIcon icon={faStarHalfAlt} />
                                         <div> {value?.membershipTier}</div>
                                     </div>
-                                    <div className={styles.Silver}>
+                                    <div className={styles.Platinum}>
                                         <FontAwesomeIcon icon={faFireFlameCurved} /><span></span>
                                         <div> {value?.energyPoint}</div>
                                     </div>
@@ -115,7 +119,7 @@ const DetailPersonInfo = () => {
                                 value={value?.address}
                                 disabled
                             />
-                            {dataFromMotherScreen.currentPage == "/staff-management" &&
+                            {dataFromMotherScreen?.currentPage == "/staff-management" &&
                                 <Input
                                     label="Vị trí"
                                     className={styles.input}
@@ -124,7 +128,7 @@ const DetailPersonInfo = () => {
                                     disabled
                                 />
                             }
-                            {dataFromMotherScreen.currentPage == "/trainer-management" &&
+                            {dataFromMotherScreen?.currentPage == "/trainer-management" &&
                                 <Input
                                     label="Chứng chỉ"
                                     className={styles.input}
@@ -133,7 +137,7 @@ const DetailPersonInfo = () => {
                                     disabled
                                 />
                             }
-                            {dataFromMotherScreen.currentPage == "/customer-management" &&
+                            {dataFromMotherScreen?.currentPage == "/customer-management" &&
                                 <div>
                                     <Input
                                         label="Ngày sinh"
@@ -158,7 +162,7 @@ const DetailPersonInfo = () => {
                             }
                         </div>
                         <div className={styles['group-2']}>
-                            {dataFromMotherScreen.currentPage == "/customer-management" && <div>
+                            {dataFromMotherScreen?.currentPage == "/customer-management" && <div>
                                 <div className={styles.flexbox}>
                                     <Input
                                         label="Cân nặng"
@@ -199,7 +203,7 @@ const DetailPersonInfo = () => {
                                     disabled
                                 />
                             </div>}
-                            {dataFromMotherScreen.currentPage == "/customer-management" &&
+                            {dataFromMotherScreen?.currentPage == "/customer-management" &&
                                 (<div>
                                     <Input
                                         label="Số điện thoại"
@@ -209,7 +213,7 @@ const DetailPersonInfo = () => {
                                         disabled />
                                 </div>)
                             }
-                            {dataFromMotherScreen.currentPage != "/customer-management" && <div>
+                            {dataFromMotherScreen?.currentPage != "/customer-management" && <div>
                                 <Input
                                     label="Số điện thoại"
                                     className={styles.input}
